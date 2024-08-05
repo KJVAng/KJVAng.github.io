@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+.Box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /*Transition
+    linea resumida 
+    >Property: propiedad que cambiara
+    >Transicion-Duration de la transicion
+    >Trasicition-delay: tiempo de espera antes de empezar la trancicion*/
+    transition-property: background-color;
+    transition-duration: 3s;
+    /*transition-delay: 2s;*/
+}
+.Box:hover{
+    background-color: rgb(255, 230, 0);
+}
+h2{
+    color: red;
+    
+}
+.Box2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    transition-property: left,background-color, width,height;
+    transition-duration: 2s;
+    transition-timing-function:cubic-bezier(.07,.54,.96,.25);
+    /*-la propiedad transition-timing-function
+    por defecto es ease */
+
+            /*<<<IMPORTANTE>>>
+                LINEA RESUMIDA
+            transition:leftt is ease */
+}
+.content{
+    width:100vw;
+    height: 100px;
+    background-color: aqua;
+    position: relative;
+}
+.content:hover .Box2{
+    left:calc(100% - 50px);
+    background-color: rgb(216, 22, 22);
+    width: 50px;
+    height: 100px;
+    
+}
