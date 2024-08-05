@@ -1,0 +1,68 @@
+body{
+    color:#df0505;
+    margin: 0 auto;
+    background:radial-gradient(#d1cfcf69,#000000);
+    background-attachment:  fixed;
+    font-family:algerian;
+}
+.IMG{
+    background: url("../IMG/p1.jpg");
+    background-size:cover;
+    background-position: center;
+    width:100%;
+    height: 150px;
+    text-align: center;
+    margin: auto;
+}
+h1{
+    margin: 0 auto;
+    text-align: center;
+     font-size: 280%;
+     padding-top: 50px;
+}
+.Cont{  /*.Cont usando la clase no funciona*/
+    text-align: center;
+}
+.Menu a{
+    border: 3px solid  #cac7c7;
+    padding: 15px;
+    text-decoration: none;
+    border-top-left-radius: 10px;
+    color: #cac7c7;
+    background-color:#df050594;
+    font-weight: bold;
+    font-size: 16px;
+}
+/*fin del menu*/
+
+.Formulario {
+    width:500px;
+    height:400px;
+    margin: auto;
+    background:url(../IMG/j2.jpg);
+    background-size: cover;
+    border: 2px solid  rgb(243, 6, 6);
+    margin-top: 20px;
+}
+.Contenido{
+    width: 100%;
+    height: 90%;
+    background-color: #cac7c763;
+    text-align: center;
+   
+}
+.datos{
+    border-radius: 5px;
+    border: 1px;
+    margin:5px ;
+    padding: 5px;
+}
+.bot{
+    border: none;
+    background-color:#df0505;
+    font-size: 15px;
+    color:#ece9e9;
+    border-radius: 8px;
+    margin: auto;
+    padding: 10px;
+}
