@@ -1,52 +1,97 @@
 body{
     margin: 0;
+    font-family: sans-serif;
+    color: #fff;
+    box-sizing:border-box;/*Para que el margin y el pading no se salga del contenido*/
+    background-color:#123;
 }
-.Box{
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    /*Transition
-    linea resumida 
-    >Property: propiedad que cambiara
-    >Transicion-Duration de la transicion
-    >Trasicition-delay: tiempo de espera antes de empezar la trancicion*/
-    transition-property: background-color;
-    transition-duration: 3s;
-    /*transition-delay: 2s;*/
+/*header seccion*/
+.header,p,h1{
+    box-sizing: border-box;
 }
-.Box:hover{
-    background-color: rgb(255, 230, 0);
+.header{
+    width:100% ;
+    height:100vh ;
+    background-image: url(img/Corp.jpg);
+    background-size:cover;
+    display: flex;
 }
-h2{
-    color: red;
-    
+h1{
+    margin: 0;
+    font-size: 3.6rem;
+    text-wrap:balance;/*navegador actual*/
 }
-.Box2{
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    position: absolute;
-    left: 0;
-    transition-property: left,background-color, width,height;
-    transition-duration: 2s;
-    transition-timing-function:cubic-bezier(.07,.54,.96,.25);
-    /*-la propiedad transition-timing-function
-    por defecto es ease */
-
-            /*<<<IMPORTANTE>>>
-                LINEA RESUMIDA
-            transition:leftt is ease */
-}
-.content{
-    width:100vw;
-    height: 100px;
-    background-color: aqua;
+.header-item-container{
     position: relative;
-}
-.content:hover .Box2{
-    left:calc(100% - 50px);
-    background-color: rgb(216, 22, 22);
-    width: 50px;
-    height: 100px;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
     
 }
+.header-overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: #1117;
+    position: absolute;
+}
+.header-img{
+    min-width: 200px;
+    max-width: 50%;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    margin-bottom: 30px;
+}
+/*Section Nav*/
+.nav{
+    background-color:#121;
+    display: flex;
+    justify-content:center;
+    position:sticky;/*mantener la posicion dada una medida ,en este caso top:0*/
+    top: 0;
+    box-shadow: 0 0 25px;/*sombra inferior del nav*/
+}
+.nav-ul-container{
+    flex-grow: 4;
+}
+.nav-logo-container{
+    flex-grow: 1;
+    padding-top: 5px;
+}
+.nav-ul{
+    display: flex;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    color: #fff;
+    text-decoration: none; /*quita la linea inferior*/
+    display: inline-block; 
+    padding: 10px;
+    border-radius: 0;
+    transition: backgraund-color0,2s,border-radius0.2s;/*para ver el efecto lento al pasar el cursor*/
+}
+.nav-link:hover{
+    background-color: #ffffff4f;
+    border-radius:20px ;
+    font-weight: bold;
+}
+.logo2{
+    width:60px;
+}
+.nav-login{
+    background: #123;
+    border: radius 20px ;
+    padding: 10px 20px;
+    margin-left: 30px;
+}
+/*section main*/
+.main{
+    max-width: 80%;
+    padding-top: 15px;
+    background-color: #123;
+    margin: auto;
+    text-align: justify;
+}
+/* section footer*/
